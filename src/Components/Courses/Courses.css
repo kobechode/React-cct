@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+
+    body{
+
+        @apply font-montserrat
+    }
+ }
+
+ .borders {
+    border-color: black;
+ }
+
+ .banner{
+  
+    background: linear-gradient(90.36deg, #FFFFFF 17.14%, rgba(255, 255, 255, 0.56085) 46.72%, rgba(255, 255, 255, 0) 99.73%), url('https://github.com/kobechode/CCT/blob/master/dist/img/bannerbg.png?raw=true') repeat fixed 100%;  
+        height: 100vh;
+      background-repeat: no-repeat;
+      position: relative;
+      width: 100%;      
+      /* background: linear-gradient((90.36deg, #FFFFFF 46.14%, rgba(255, 255, 255, 0.56085) 86.72%, rgba(255, 255, 255, 0) 99.73%),url('/dist/img/bannerbg.png') repeat fixed 100%); */
+}
+
+
+.tns-controls {
+
+    position: relative;
+}
+
+.tns-controls button:first-child{
+
+    position: absolute;
+    top:10rem;
+     font-size: 2rem;
+     z-index: 1;
+     left: -2rem;
+     margin-top: -3rem;
+
+}
+
+.tns-controls button:last-child{
+    font-size: 2rem;
+     position: absolute;
+     right: 1rem;
+     top: 10rem;
+     z-index: 1;
+     margin-top: -3rem;
+   
+}
+
+
+
+.toggleMenu span{
+    height: 0.2rem;
+    width: 2rem;
+    @apply bg-gray-500 block mb-1
+ }
+
+ .toggleMenu span:nth-child(2){
+    width: 2rem;
+ }
+
+ .toggleMenu span:nth-child(3){
+        width: 2rem;
+    }
+
+ .headerMobileNav.active{
+    max-height: 500px;
+ }
+
+ .headerMobileNav{
+    max-height: 0;
+    overflow: hidden;
+ }
+
+ .theFigure .item:nth-child(1){
+   @apply absolute left-[50%] -bottom-[12px] -translate-x-[120%]  -translate-y-0
+}
+
+.theFigure .item:nth-child(2){
+   @apply absolute left-[50%] -bottom-0 -translate-x-[45%] -translate-y-0
+}
+
+.theFigure .item:nth-child(3){
+   @apply absolute left-[50%] -bottom-[17px] translate-x-[38%] -translate-y-0
+}
+
+
+.portraitItem{
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.portraitItem.active {
+   @apply w-[700px] transition-all duration-500
+}
+
+.portraitItem-name .theName{
+   transform: rotate(-90deg);
+   margin-top: 10rem;
+   width: 11rem;
+   @apply mx-auto
+}
+
+.portraitItem.active .portraitItem-name .theName {
+   transform: rotate(0);
+   margin-top: 0;
+}
+
+.portraitItem.active .portraitItem-name .desc {
+   @apply block
+}
+
+
+
+
+
+
+
+
+
+
